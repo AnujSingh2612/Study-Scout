@@ -35,21 +35,21 @@ StudyScout is a beginner-friendly interactive website designed to help students 
 study-scout/
 - index.html          # Login or main landing page
 - resources.html      # Page showing categorized study materials
-─ history.html        # Displays search history of the user
-─ about.html          # About the project and its purpose
-─ style.css           # All the CSS styles for layout and design
-─ script.js           # JavaScript for interactivity and functionality
-─ README.md           # Project documentation (you’re writing this!)
-─ .git/               # Git folder (auto-created, hidden by default)
+- history.html        # Displays search history of the user
+- about.html          # About the project and its purpose
+- style.css           # All the CSS styles for layout and design
+- script.js           # JavaScript for interactivity and functionality
+- README.md           # Project documentation (you’re writing this!)
+- .git/               # Git folder (auto-created, hidden by default)
 
 ---
 
 ## Future Features
 
-- 🎯 Personalized resource recommendations
-- 🔒 Backend with user database (Node.js + MongoDB)
-- 📱 Mobile app version
-- 📊 Analytics dashboard for user progress
+-  Personalized resource recommendations
+-  Backend with user database (Node.js + MongoDB)
+-  Mobile app version
+-  Analytics dashboard for user progress
 
 ---
 
