@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyScout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>StudyScout</h1>
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="resources.html">Resources</a>
+  <a href="history.html">History</a>
+  <a href="about.html">About</a>
+  <a href="#" onclick="logout()">Logout</a>
+</nav>
+
+  </header>
+
+ <main>
+  <h2 id="greeting"></h2>
+
+  <section>
+    <label for="goal">🎯 Select Your Goal:</label>
+    <select id="goal" onchange="showSubtopics()">
+      <option value="">--Choose a goal--</option>
+      <option value="neet">NEET</option>
+      <option value="jee">JEE</option>
+      <option value="upsc">UPSC</option>
+      <option value="webdev">Web Development</option>
+      <option value="ai">Artificial Intelligence</option>
+    </select>
+
+    <div id="subtopics" style="margin-top: 10px;"></div>
+    <button onclick="goToResources()">Find Resources</button>
+  </section>
+
+  <section style="margin-top: 30px;">
+    <h3>📌 Your Progress Tracker</h3>
+    <input type="text" id="progressInput" placeholder="Add a topic/task" />
+    <button onclick="addProgressItem()">Add</button>
+    <ul id="progress-list"></ul>
+  </section>
+
+  <section style="margin-top: 30px;">
+    <h3>💡 Tip of the Day</h3>
+    <p id="tip"></p>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+<script>
+  const user = localStorage.getItem("studyUser");
+  if (!user) window.location.href = "login.html";
+  else document.getElementById("welcome").innerText = `Welcome, ${user}!`;
+</script>
+<script>
+  function logout() {
+    localStorage.clear();
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>

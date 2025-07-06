@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search History - StudyScout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Search History</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your Past Searches</h2>
+    <ul id="history-list"></ul>
+  </main>
+
+  <script>
+    const history = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+    const list = document.getElementById("history-list");
+    list.innerHTML = history.map(item => `<li>${item}</li>`).join("");
+  </script>
+</body>
+</html>

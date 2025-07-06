@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resources - StudyScout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>StudyScout Resources</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="history.html">History</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Recommended Resources</h2>
+    <div class="resource-card">
+      <h3>YouTube: Unacademy</h3>
+      <a href="https://youtube.com/@Unacademy" target="_blank">Visit Channel</a>
+    </div>
+    <div class="resource-card">
+      <h3>Google: NEET Mock Tests</h3>
+      <a href="https://www.google.com/search?q=neet+mock+test" target="_blank">Search on Google</a>
+    </div>
+    <!-- Add more cards as needed -->
+  </main>
+
+  <script>
+    function logout() {
+      localStorage.clear();
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

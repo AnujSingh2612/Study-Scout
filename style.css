@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Layout Containers */
+main, header, section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+  background-color: #005eff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Buttons */
+button, .link-button {
+  background-color: #005eff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+button:hover, .link-button:hover {
+  background-color: #0044cc;
+}
+
+/* Inputs */
+input[type="text"], select, textarea {
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Cards and Utilities */
+.resource-card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #005eff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Tip & Progress List */
+#tip {
+  font-style: italic;
+  color: #555;
+}
+
+ul#progress-list {
+  list-style: none;
+  padding-left: 0;
+}
+ul#progress-list li {
+  margin-bottom: 6px;
+}
